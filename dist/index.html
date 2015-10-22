@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>College of Materials Science and Engineering</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
@@ -19,27 +20,27 @@
 		</div>
 		<div class="nav">
 			<ul>
-				<li><a href="">Home  </a></li>
-			</ul>
-			<ul>
-				<li><a href="">About Us </a></li>
-			</ul>
-			<ul>
-				<li><a href="">Educations </a></li>
-			</ul>
-			<ul>
-				<li><a href="">Faculty  </a></li>
-			</ul>
-			<ul>
-				<li><a href="">Research </a></li>
-			</ul>
-			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">About Us</a></li>
+				<li><a href="">Educations</a></li>
+				<li><a href="">Faculty</a></li>
 				<li><a class="no-border" href="">Contact Us</a></li>
 			</ul>
 		</div>
 		<div class="main">
 			<div class="photobox">
-				<ul>
+				<ul class="slides">
+					<li>
+						<img src="img/material1.jpg" />
+					</li>
+					<li>
+						<img src="img/material2.jpg" />
+					</li>
+					<li>
+						<img src="img/material3.jpg" />
+					</li>
+				</ul>
+				<!--<ul>
 					<li>
 						<div style="display:block;" class="showbox">
 							<img src="img/material1.jpg" />
@@ -58,10 +59,10 @@
 						</div>				
 						<div class="album"><img src="img/material3.jpg" /></div>
 					</li>
-				</ul>
+				</ul>-->
 			</div>
 			<div class="content">
-				<div class="news_envents">
+				<div class="block news_envents">
 					<h1>>> NEWS&EVENTS</h1>
 					<ul>
 						<li>
@@ -91,7 +92,7 @@
 						
 					</ul>
 				</div>
-				<div class="useful_links">
+				<div class="block useful_links">
 					<h1>>> USEFUL LINK</h1>
 					<ul>
 						<li><a href="http://www.fzu.edu.cn/" target="_blank">福州大学首页</a></li>
@@ -107,11 +108,23 @@
 						<li><a href="http://cailiao.nwpu.edu.cn/" target="_blank">西北工大材料学院</a></li>
 						<li><a href="http://smse.sjtu.edu.cn" target="_blank">上海交大材料学院</a></li>
 					</ul>
-
 				</div>
 			</div>
 		</div>
-		<div class="footer">Copyright &copy; 2015. College of Materials Science and Engineering,Fuzhou University,All rights reserved</div>
+		<div class="footer">
+			<span>Copyright &copy; 2015. College of Materials Science and Engineering,Fuzhou University,All rights reserved</span>
+		</div>
 	</div>
+	<script src="scripts/libs/jquery-1.11.3.min.js"></script>
+	<script src="scripts/libs/jquery.flexslider-min.js"></script>
+	<script>
+		$(function(){
+			$('.photobox').flexslider({
+				animation: "slide",
+				itemWidth: $(this).width(),
+				//controlNav: "thumbnails"
+			});
+		});
+	</script>
 </body>
 </html>
