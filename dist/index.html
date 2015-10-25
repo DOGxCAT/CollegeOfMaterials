@@ -20,15 +20,31 @@
 		</div>
 		<div class="nav">
 			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">About Us</a></li>
-				<li><a href="">Educations</a></li>
-				<li><a href="">Faculty</a></li>
-				<li><a class="no-border" href="">Contact Us</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="educations.html">Educations</a></li>
+				<li><a href="faculty.html">Faculty</a></li>
+				<li><a class="no-border" href="contact">Contact Us</a></li>
 			</ul>
 		</div>
+
 		<div class="main">
 			<div class="photobox">
+				<div id="slider" class="flexslider">
+					<ul class="slides">
+						<li>
+							<img src="img/material1.jpg" />
+						</li>
+						<li>
+							<img src="img/material2.jpg" />
+						</li>
+						<li>
+							<img src="img/material3.jpg" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="carousel" class="flexslider slider_bar">
 				<ul class="slides">
 					<li>
 						<img src="img/material1.jpg" />
@@ -40,6 +56,7 @@
 						<img src="img/material3.jpg" />
 					</li>
 				</ul>
+			</div>
 				<!--<ul>
 					<li>
 						<div style="display:block;" class="showbox">
@@ -60,36 +77,35 @@
 						<div class="album"><img src="img/material3.jpg" /></div>
 					</li>
 				</ul>-->
-			</div>
+		
 			<div class="content">
 				<div class="block news_envents">
-					<h1>>> NEWS&EVENTS</h1>
+					<h1>>> Recruitment Notices</h1>
 					<ul>
 						<li>
 							<span>2015-09-02</span>
-							<a href="#" target="_blank" title="关于表彰2015年度优秀班主任、导师的决定">关于表彰2015年度优秀班主任、导师的决定</a>
+							<a href="#" target="_blank" title="#">Recruitment Notices Recruitment Notices </a>
 						</li>
 						<li>
 							<span>2015-09-02</span>
-							<a href="#" target="_blank" title="关于拟聘2015级（本科生）班主任的决定">关于拟聘2015级（本科生）班主任的决定</a>
+							<a href="#" target="_blank" title="#">Recruitment Notices Recruitment Notices </a>
 						</li>
 						<li>
 							<span>2015-06-24</span>
-							<a href="#" target="_blank" title="关于院党委书记徐雪玉同志讲“三严三实”专题党课的通知">关于院党委书记徐雪玉同志讲“三严三实”专题党课的通知</a>
+							<a href="#" target="_blank" title="#">Recruitment Notices Recruitment Notices</a>
 						</li>
 						<li>
 							<span>2015-09-02</span>
-							<a href="#" target="_blank" title="关于表彰2015年度优秀班主任、导师的决定">关于表彰2015年度优秀班主任、导师的决定</a>
+							<a href="#" target="_blank" title="#">Recruitment Notices Recruitment Notices</a>
 						</li>
 						<li>
 							<span>2015-09-02</span>
-							<a href="#" target="_blank" title="关于拟聘2015级（本科生）班主任的决定">关于拟聘2015级（本科生）班主任的决定</a>
+							<a href="#" target="_blank" title="#">Recruitment Notices Recruitment Notices</a>
 						</li>
 						<li>
 							<span>2015-06-24</span>
-							<a href="#" target="_blank" title="关于院党委书记徐雪玉同志讲“三严三实”专题党课的通知">关于院党委书记徐雪玉同志讲“三严三实”专题党课的通知</a>
-						</li>
-						
+							<a href="#" target="_blank" title="#">Recruitment Notices Recruitment Notices</a>
+						</li>				
 					</ul>
 				</div>
 				<div class="block useful_links">
@@ -118,13 +134,32 @@
 	<script src="scripts/libs/jquery-1.11.3.min.js"></script>
 	<script src="scripts/libs/jquery.flexslider-min.js"></script>
 	<script>
-		$(function(){
+		/*$(function(){
 			$('.photobox').flexslider({
 				animation: "slide",
 				itemWidth: $(this).width(),
 				//controlNav: "thumbnails"
 			});
-		});
+		});*/
+	$(function() {
+	  // The slider being synced must be initialized first
+	  $('#carousel').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    directionNav: false, 
+	    slideshow: true,
+	    itemWidth: 380,
+	    asNavFor: '#slider'
+	  });
+	 
+	  $('#slider').flexslider({
+	    animation: "slide",
+	    directionNav: true, 
+	    controlNav: false,
+	    slideshow: true,
+	    sync: "#carousel"
+	  });
+	});
 	</script>
 </body>
 </html>
