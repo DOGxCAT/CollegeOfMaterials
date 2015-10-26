@@ -8,14 +8,20 @@
 <body>
 	<div class="container">
 		<div class="shift">
-			<a href="http://cl.fzu.edu.cn">中文版 丨 </a>
-			<a href="#">Fuzhou University</a>
+			<div class="link">
+				<a href="http://cl.fzu.edu.cn">中文版 丨 </a>
+				<a href="#">Fuzhou University</a>
+			</div>
 		</div>
-		<div class="top">
-			<img src="img/badge.png" />
-			<span>College of Materials Science and Engineering</span>
-			<span>FUZHOU UNIVERSITY</span>
-			<input type="text" value="search"></input>
+		<div class="header">
+			<div class="top">
+				<img src="img/badge.png" />
+				<div class="title">
+					<span>College of Materials Science and Engineering</span>
+					<span>FUZHOU UNIVERSITY</span>
+				</div>
+				<input type="text" value="search"></input>
+			</div>
 		</div>
 		<div class="nav">
 			<ul>
@@ -34,12 +40,12 @@
 					<li><a id="tab2">> Adminstration </a></li>
 				</ul>	
 			</div>
-			<div id="intruduction">
+			<div id="intruduction" class="right">
 				<p>福州大学材料科学与工程学院以学科建设为龙头，重点学科建设持续稳步发展。早在1992年，省教委批准（金属材料学科）为省级重点学科，省级重点实验室；1996年，金属材料（材料学）被列为福建省重点学科；2005年，材料学、材料物理与化学被列为福建省重点学科；2012年，材料科学与工程被列为福建省省级重点学科和福建省特色重点学科。本学科持续得到国家“211工程”重点学科建设的立项建设支持。早在1995年即被省政府批准为省“211工程”重点学科，1996年福州大学“211工程”重点建设学科项目“新材料与材料微观行为研究”正式立项，1999年，“新材料与材料微观行为研究”成为国家“九五”“211工程”重点学科建设项目；2004年，“新材料先进制备技术研究与应用”成为国家“十五”“211工程”重点学科建设项目“新材料先进制备技术研究与应用”；2008年，“装备设计制造关键技术及先进材料”成为国家“211工程”三期重点学科建设项目。</p>
 				<p>学院现有材料科学与工程一级学科博士后流动站，材料科学与工程一级学科博士学位授予权，下设有材料学、材料物理与化学、材料加工工程、新能源材料二级学科博士点；材料科学与工程一级学科硕士授予权，下设材料物理与化学、材料学、材料加工工程以及材料工程专业学位（包括全日制和非全日制）四个二级学科硕士点。为适应本科专业教育改革，1994年在国内首批设立材料科学与工程专业。</p>
 				<p>学院长期坚持不懈加强师资队伍建设，已初步建立起一支结构合理、素质良好、充满活力和发展后劲的教学科研人才队伍。现有专任教师41人，其中教授占36.6%，副教授占39%。具有博士学位的教师比例达到85.4%，具有海外半年以上学习工作经历的教师比例达到34.1%。拥有国家级专家1名，省优专家1名，省百千万人才3名，省高校新世纪优秀人才5名，享受国务院特殊津贴专家3名，担任省级以上学术团体理事10名。</p>
 			</div>
-			<div id="adminstration">
+			<div id="adminstration" class="right">
 				<table>
 					<tr>
 						<th> </th>
@@ -73,21 +79,20 @@
 					</tr>
 				</table>	
 			</div>
-
-		</div>
-		<div class="footer">
-			<span>Copyright &copy; 2015. College of Materials Science and Engineering,Fuzhou University,All rights reserved</span>
-		</div>
+		</div>		
+	</div>
+	<div class="footer">
+		<span>Copyright &copy; 2015. College of Materials Science and Engineering,Fuzhou University,All rights reserved</span>
 	</div>
 	<script src="scripts/libs/jquery-1.11.3.min.js"></script>
 	<script>
-		$(document).ready(function(){
+		$(function(){
 			$('#adminstration').hide();
-			$('#tab1').click(function(){
+			$('#tab1').click(function() {
 				$('#adminstration').hide();
 				$('#intruduction').show();
 			});
-			$('#tab2').click(function(){
+			$('#tab2').click(function() {
 				$('#intruduction').hide();
 				$('#adminstration').show();
 			});

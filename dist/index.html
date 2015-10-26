@@ -9,15 +9,22 @@
 <body>
 	<div class="container">
 		<div class="shift">
-			<a href="http://cl.fzu.edu.cn">中文版 丨 </a>
-			<a href="#">Fuzhou University</a>
+			<div class="link">
+				<a href="http://cl.fzu.edu.cn">中文版 丨 </a>
+				<a href="#">Fuzhou University</a>
+			</div>
 		</div>
-		<div class="top">
-			<img src="img/badge.png" />
-			<span>College of Materials Science and Engineering</span>
-			<span>FUZHOU UNIVERSITY</span>
-			<input type="text" value="search"></input>
+		<div class="header">
+			<div class="top">
+				<img src="img/badge.png" />
+				<div class="title">
+					<span>College of Materials Science and Engineering</span>
+					<span>FUZHOU UNIVERSITY</span>
+				</div>
+				<input type="text" value="search"></input>
+			</div>
 		</div>
+		
 		<div class="nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -126,23 +133,15 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="footer">
-			<span>Copyright &copy; 2015. College of Materials Science and Engineering,Fuzhou University,All rights reserved</span>
-		</div>
+		</div>		
+	</div>
+	<div class="footer">
+		<span>Copyright &copy; 2015. College of Materials Science and Engineering,Fuzhou University,All rights reserved</span>
 	</div>
 	<script src="scripts/libs/jquery-1.11.3.min.js"></script>
 	<script src="scripts/libs/jquery.flexslider-min.js"></script>
 	<script>
-		/*$(function(){
-			$('.photobox').flexslider({
-				animation: "slide",
-				itemWidth: $(this).width(),
-				//controlNav: "thumbnails"
-			});
-		});*/
 	$(function() {
-	  // The slider being synced must be initialized first
 	  $('#carousel').flexslider({
 	    animation: "slide",
 	    controlNav: false,
