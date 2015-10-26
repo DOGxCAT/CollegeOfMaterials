@@ -23,18 +23,87 @@
 				<li><a href="about.html">About Us</a></li>
 				<li><a href="educations.html">Educations</a></li>
 				<li><a href="faculty.html">Faculty</a></li>
-				<li><a class="no-border" href="contact">Contact Us</a></li>
+				<li><a class="no-border" href="contact.html">Contact Us</a></li>
 			</ul>
 			</ul>
 		</div>
-		<div class="faculty">
-			<table>
-				
-			</table>
+		<div class="layout faculty">
+			<div class="sidebar">
+				<h2>Faculty</h2>
+				<ul>
+					<li><a id="tab1">> Professor</a></li>
+					<li><a id="tab2">> Associate Professor </a></li>
+					<li><a id="tab3">> Lecturer</a></li>
+				</ul>	
+			</div>
+			<div id="people1">
+				<div class="people">
+					<img src="img/faculty.png" />
+					<h5>NAME</h5>
+					<span>Email:  ***@fzu.edu.cn</span>
+					<p>Research fields:Heat transfer and equipment, Mass transfer and equipment, Separation of effective constituents in plants, Separation process coupled with reaction.</p>
+				</div>
+				<div class="people">
+					<img src="img/faculty.png" />
+					<h5>NAME</h5>
+					<span>Email:  ***@fzu.edu.cn</span>
+					<p>Research fields:Heat transfer and equipment, Mass transfer and equipment, Separation of effective constituents in plants, Separation process coupled with reaction.</p>
+				</div>
+				<div class="people">
+					<img src="img/faculty.png" />
+					<h5>NAME</h5>
+					<span>Email:  ***@fzu.edu.cn</span>
+					<p>Research fields:Heat transfer and equipment, Mass transfer and equipment, Separation of effective constituents in plants, Separation process coupled with reaction.</p>
+				</div>
+			</div>	
+			<div id="people2">
+				<div class="people">
+					<img src="img/faculty.png" />
+					<h5>NAME</h5>
+					<span>Email:  ***@fzu.edu.cn</span>
+					<p>Research fields:Heat transfer and equipment, Mass transfer and equipment, Separation of effective constituents in plants, Separation process coupled with reaction.</p>
+				</div>
+				<div class="people">
+					<img src="img/faculty.png" />
+					<h5>NAME</h5>
+					<span>Email:  ***@fzu.edu.cn</span>
+					<p>Research fields:Heat transfer and equipment, Mass transfer and equipment, Separation of effective constituents in plants, Separation process coupled with reaction.</p>
+				</div>
+			</div>
+			<div id="people3">
+				<div class="people">
+					<img src="img/faculty.png" />
+					<h5>NAME</h5>
+					<span>Email:  ***@fzu.edu.cn</span>
+					<p>Research fields:Heat transfer and equipment, Mass transfer and equipment, Separation of effective constituents in plants, Separation process coupled with reaction.</p>
+				</div>
+			</div>
 		</div>
 		<div class="footer">
 			<span>Copyright &copy; 2015. College of Materials Science and Engineering,Fuzhou University,All rights reserved</span>
 		</div>
 	</div>
+	<script src="scripts/libs/jquery-1.11.3.min.js"></script>
+	<script>
+	$(document).ready(function(){
+			$('#people2').hide();
+			$('#people3').hide();
+		$('#tab1').click(function(){
+			$('#people1').show();
+			$('#people2').hide();
+			$('#people3').hide();
+		});
+		$('#tab2').click(function(){
+			$('#people2').show();
+			$('#people1').hide();
+			$('#people3').hide();
+		});
+		$('#tab3').click(function(){
+			$('#people3').show();
+			$('#people2').hide();
+			$('#people1').hide();
+		});
+	});
+	</script>
 </body>
 </html>
