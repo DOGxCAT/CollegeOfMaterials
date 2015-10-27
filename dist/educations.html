@@ -8,14 +8,20 @@
 <body>
 	<div class="container">
 		<div class="shift">
-			<a href="http://cl.fzu.edu.cn">中文版 丨 </a>
-			<a href="#">Fuzhou University</a>
+			<div class="link">
+				<a href="http://cl.fzu.edu.cn">中文版 丨 </a>
+				<a href="#">Fuzhou University</a>
+			</div>
 		</div>
-		<div class="top">
-			<img src="img/badge.png" />
-			<span>College of Materials Science and Engineering</span>
-			<span>FUZHOU UNIVERSITY</span>
-			<input type="text" value="search"></input>
+		<div class="header">
+			<div class="top">
+				<img src="img/badge.png" />
+				<div class="title">
+					<span>College of Materials Science and Engineering</span>
+					<span>FUZHOU UNIVERSITY</span>
+				</div>
+				<input type="text" value="search"></input>
+			</div>
 		</div>
 		<div class="nav">
 			<ul>
@@ -23,17 +29,98 @@
 				<li><a href="about.html">About Us</a></li>
 				<li><a href="educations.html">Educations</a></li>
 				<li><a href="faculty.html">Faculty</a></li>
+				<li><a href="research.html">Research</a></li>
 				<li><a class="no-border" href="contact.html">Contact Us</a></li>
 			</ul>
 		</div>
-		<div class="faculty">
-			<table>
+		<div class="layout educations">
+			<div class="sidebar">
+				<h2>Education</h2>
+				<ul>
+					<li><a id="tab1">> Overview</a></li>
+					<li><a id="tab2">> Undergraduate </a></li>
+					<li><a id="tab3">> Graduate </a></li>
+					<li><a id="tab4">> International education</a></li>
+					<li><a id="tab5">> Scholarship</a></li>
+				</ul>	
+			</div>
+			<div class="right">
+				<div id="overview"><p>overview..</p></div>
+				<div id="undergraduate">
+					<div class="edu_table">
+						<h3>Program Information</h3>
+						<p>xxxxxxxx xxxxx xxxxxxx xxxxx xxxxxxxx xxxxxxxx xxxxxxx x xxxxxxxxxxxxx xxx  xxxxxxxxxxxx xxxxxx xxxxxxxxxx  xxx xxxxxxxxx xxxxxxxxxxx undergraduate..Program Information Program Information</p>
+					</div>
+					<div class="edu_table">
+						<h3>Courses</h3>
+						<p>undergraduate..</p>
+					</div>
+					
+					</div>
+				<div id="graduate">
+					<div class="edu_table">
+						<h3>Program Information</h3>
+						<p>xxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxxxx undergraduate..Program Information Program Information</p>
+					</div>
+					<div class="edu_table">
+						<h3>Courses</h3>
+						<p>undergraduate.xxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxx x
+							xxxxx xxxxxxxxx xxxxxxxx xxxxxxxxxxxx x xxxxxxx
+							xxxxxxx xxxxxxxxx xxxxxxxxxxxxx xxxxxx xxxxxxxxxxx xxxxxxxx.</p>
+					</div>
+				</div>
+				<div id="education"><p>education..</p></div>
+				<div id="scholarship"><p>scholarship..</p></div>
 				
-			</table>
-		</div>
-		<div class="footer">
-			<span>Copyright &copy; 2015. College of Materials Science and Engineering,Fuzhou University,All rights reserved</span>
+			</div>
 		</div>
 	</div>
+	<div class="footer">
+		<span>Copyright &copy; 2015. College of Materials Science and Engineering, Fuzhou University, All rights reserved</span>
+	</div>
+	<script src="scripts/libs/jquery-1.11.3.min.js"></script>
+	<script>
+	$(function(){
+			$('#scholarship').hide();
+			$('#undergraduate').hide();
+			$('#graduate').hide();
+			$('#education').hide();
+		$('#tab1').click(function(){
+			$('#overview').show();
+			$('#undergraduate').hide();
+			$('#graduate').hide();
+			$('#education').hide();
+			$('#scholarship').hide();
+		});
+		$('#tab2').click(function(){
+			$('#overview').hide();
+			$('#undergraduate').show();
+			$('#graduate').hide();
+			$('#education').hide();
+			$('#scholarship').hide();
+		});
+		$('#tab3').click(function(){
+			$('#overview').hide();
+			$('#undergraduate').hide();
+			$('#graduate').show();
+			$('#education').hide();
+			$('#scholarship').hide();
+		});
+		$('#tab4').click(function(){
+			$('#overview').hide();
+			$('#undergraduate').hide();
+			$('#graduate').hide();
+			$('#education').show();
+			$('#scholarship').hide();
+		});
+		$('#tab5').click(function(){
+			$('#overview').hide();
+			$('#undergraduate').hide();
+			$('#graduate').hide();
+			$('#education').hide();
+			$('#scholarship').show();
+		});
+	});
+	</script>
 </body>
 </html>

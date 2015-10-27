@@ -72,6 +72,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:normal;}
 			input[type="text"] {
 				text-align:center;
 				position: absolute;
+				line-height: 10px;
 				width: 160px;
 				right: 0;
 				height: 30px;
@@ -211,9 +212,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:normal;}
 			width: 100%;
 			padding-left: 260px;
 		}
-		.people-container {
-			
-		}
 	}
 	.sidebar{
 		width: 230px;
@@ -237,9 +235,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:normal;}
 		}
 	}
 	.faculty{
-		width: 80%;
-		max-width: 1280px;
-		margin: 0 auto;
 		padding-top: 30px;
 		@extend %clearfix;
 		.people{
@@ -298,6 +293,34 @@ h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:normal;}
 				padding: 3px;
 			}
 		}
+	}
+	.research{
+		@extend %clearfix;
+		margin: 20px auto;
+		p{
+			width:80%;
+			padding: 10px;
+			text-align: justify;
+		}
+	}
+	.educations{
+		@extend %clearfix;
+		margin: 20px auto;	
+		.edu_table{
+			vertical-align: top;
+			width: 45%;
+			min-width: 300px;
+			display: inline-block;
+			border: 1px solid #555;
+			text-align: center;
+			line-height: 30px;
+			h3{
+				color: #222;
+				font-size: 150%;
+				font-weight: bold;
+				border-bottom:  1px solid #555;
+			}
+		}	
 	}
 }
 

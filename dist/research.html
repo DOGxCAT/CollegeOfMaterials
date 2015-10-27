@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-cmn">
+<head>
+	<meta charset="UTF-8">
+	<title>Research</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="shift">
+			<div class="link">
+				<a href="http://cl.fzu.edu.cn">中文版 丨 </a>
+				<a href="#">Fuzhou University</a>
+			</div>
+		</div>
+		<div class="header">
+			<div class="top">
+				<img src="img/badge.png" />
+				<div class="title">
+					<span>College of Materials Science and Engineering</span>
+					<span>FUZHOU UNIVERSITY</span>
+				</div>
+				<input type="text" value="search"></input>
+			</div>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="educations.html">Educations</a></li>
+				<li><a href="faculty.html">Faculty</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a class="no-border" href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class="layout research">
+			<div class="sidebar">
+				<h2>Research</h2>
+				<ul>
+					<li><a id="tab1">> Overview  </a></li>
+					<li><a id="tab2">> Insititutes  </a></li>
+					<li><a id="tab3">> Key Labs</a></li>
+					<li><a id="tab4">> Facilities </a></li>
+				</ul>	
+			</div>
+			<div class="right">
+				<div id="overview" class="research-container">
+					<p> 整体介绍学院科研条件、科研进展、科研成果 </p>
+					<p>xxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxx xxxxxx xxxxxxxxxxxx xxxxxxxxx
+						xxxxxxxxxx xxxxxxxxxxxx xxxxxx xxx xxxxxxx xxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxx
+						xxxxxxxxxx xxxxxxxxxxxx xx	xxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxx
+						xxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxx xxxxxxxxxxx xxxxxx x x x
+					</p>
+				</div>
+				<div id="insititutes">
+					<p>test111111111 11111</p>
+				</div>
+				<div id="keylabs">
+					<p>test222222</p>
+				</div>
+				<div id="facilities">
+					<p>test333333</p>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="footer">
+			<span>Copyright &copy; 2015. College of Materials Science and Engineering, Fuzhou University, All rights reserved</span>
+		</div>
+	<script src="scripts/libs/jquery-1.11.3.min.js"></script>
+	<script>
+		$(function(){
+			$('#insititutes').hide();
+			$('#keylabs').hide();
+			$('#facilities').hide();
+			$('#tab1').click(function() {
+				$('#overview').show();
+				$('#insititutes').hide();
+				$('#keylabs').hide();
+				$('#facilities').hide();
+			});
+			$('#tab2').click(function() {
+				$('#overview').hide();
+				$('#insititutes').show();
+				$('#keylabs').hide();
+				$('#facilities').hide();
+			});
+			$('#tab3').click(function() {
+				$('#overview').hide();
+				$('#insititutes').hide();
+				$('#keylabs').show();
+				$('#facilities').hide();
+			});
+			$('#tab4').click(function() {
+				$('#overview').hide();
+				$('#insititutes').hide();
+				$('#keylabs').hide();
+				$('#facilities').show();
+			});
+		});
+	</script>
+</body>
+</html>
