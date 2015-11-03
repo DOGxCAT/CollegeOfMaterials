@@ -44,7 +44,7 @@
 				</ul>	
 			</div>
 			<div class="right">
-				<div id="overview" class="research-container">
+				<div id="overview" >
 					<p> 整体介绍学院科研条件、科研进展、科研成果 </p>
 					<p>xxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxx xxxxxx xxxxxxxxxxxx xxxxxxxxx
 						xxxxxxxxxx xxxxxxxxxxxx xxxxxx xxx xxxxxxx xxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxx
@@ -52,14 +52,79 @@
 						xxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxx xxxxxxxxxxx xxxxxx x x x
 					</p>
 				</div>
-				<div id="insititutes">
-					<p>test111111111 11111</p>
+				<div id="insititutes" >
+					<div class="insititutes">
+						<img src="img/platform1.png" />
+						<h3>Advanced Materials Research Center</h3>
+						<p>Research Center for Advanced Materials (RCAM) is one of five research platforms affiliated to School of Mate…</p>
+						<button class="button1">VIEW PROFILE</button>
+					</div>	
+					<div class="insititutes">
+						<img src="img/platform1.png" />
+						<h3>Advanced Materials Research Center</h3>
+						<p>Research Center for Advanced Materials (RCAM) is one of five research platforms affiliated to School of Mate…</p>
+						<button class="button1">VIEW PROFILE</button>
+					</div>	
+					<div class="insititutes">
+						<img src="img/platform1.png" />
+						<h3>Advanced Materials Research Center</h3>
+						<p>Research Center for Advanced Materials (RCAM) is one of five research platforms affiliated to School of Mate…</p>
+						<button class="button1">VIEW PROFILE</button>
+					</div>	
+				</div>
+				<div id="profile1" class="profile">
+					<h4>Advanced Materials Research Center</h4>
+					<img src="img/platform1.png" />
+					<ul>
+						<li><b>Chair:</b><span>Prof. Ming LI</span></li>
+						<li><b>Location:</b><span>Material Building A</span></li>
+						<li><b>Tel:</b><span>123-13431432-34</span></li>
+						<li><b>Email:</b><span>**@fzu.edu.cn</span></li>
+					</ul>
+		
+					<div>
+						<h4>INTRODUCTION</h4>
+						<p>Research Center for Advanced Materials (RCAM) is one of five research platforms affiliated to School of Material Science and Engineering (SMSE) at Shanghai Jiao Tong University (SJTU). RCAM has a long research history in the area of high-temperature materials, steel materials and martensitic transformation theory, made great contributions to the development of steel materials, and has been cultivating a large number of outstanding professionals for the society. In response to the recent development of materials science and the growing demand for new materials, RCAM has been adjusting research directions these years. While keeping traditional strengths, rapid development has been achieved in areas such as microelectronic materials and technology, energy materials, nanomaterials, materials modeling and simulation, and materials microstructure. Several of these areas have already built their unique strengths and become new growing points of SMSE.  RCAM’s excellence is ensured by its numerous em</p>
+					</div>
+					
 				</div>
 				<div id="keylabs">
-					<p>test222222</p>
+					<div class="insititutes">
+						<img src="img/platform2.png" />
+						<h3>The State Key Lab of Metal Matrix Composites</h3>
+						<p>The predecessor of State Key Laboratory of Metal Matrix Composites (SKLMMC) is the composites research instit…</p>
+						<button class="button2">VIEW PROFILE</button>
+					</div>	
+					<div class="insititutes">
+						<img src="img/platform2.png" />
+						<h3>The State Key Lab of Metal Matrix Composites</h3>
+						<p>The predecessor of State Key Laboratory of Metal Matrix Composites (SKLMMC) is the composites research instit…</p>
+						<button class="button2">VIEW PROFILE</button>
+					</div>	
+					<div class="insititutes">
+						<img src="img/platform2.png" />
+						<h3>The State Key Lab of Metal Matrix Composites</h3>
+						<p>The predecessor of State Key Laboratory of Metal Matrix Composites (SKLMMC) is the composites research instit…</p>
+						<button class="button2">VIEW PROFILE</button>
+					</div>	
+				</div>
+				<div id="profile2" class="profile">
+					<h4>Advanced Materials Research Center</h4>
+					<img src="img/platform2.png" />
+					<ul>
+						<li><b>Chair:</b><span>Prof. Di ZHANG</span></li>
+						<li><b>Location:</b><span>Material Building D</span></li>
+						<li><b>Tel:</b><span>123-13431432-34</span></li>
+						<li><b>Email:</b><span>**@fzu.edu.cn</span></li>
+					</ul>
+		
+					<div>
+						<h4>The State Key Lab of Metal Matrix Composites</h4>
+						<p>The predecessor of State Key Laboratory of Metal Matrix Composites (SKLMMC) is the composites research institute of Shanghai Jiaotong University. Furthermore, the aim of SKLMMC is develop new materials in order to break international blockage. SKLMMC was authorized to be built up by the State Development Planning Commission in 1989, was established and passed the assesment in 1991, and was open in 1992. SKLMMC also passed the assesments of National Science and Technology Ministry and National Natural Science Committee in March 1997, March 2003, and March 2008. The fifth academic committee is made up of 15 experts and scholars in materials science, 7 experts are the Academicians. Professor Zhang Di is the director of SKLMMC and academician Ye Heng Qiang is the director of the academic committee.</p>
+					</div>
 				</div>
 				<div id="facilities">
-					<p>test333333</p>
+					<p> xxxx is spread over nine buildings in SJTU's Minghang and Xuhui campus, which occupies over 40,000 square meters of lab space.  About 1200 equipment is used by 15 hundreds of researchers, including faculty, research scientists, graduate students, and undergraduate researchers.  These facilities are belongs to the laboratories of The State Key Lab of Metal Matrix Composites, National Engineering Research Center of Die and Mold CAD, National Engineering Research Center of Light Alloy Net Forming, Shanghai Key Lab of of Materials Laser Processing and Modification, Materials testing and analysis center, and other groups. SMSE has state-of-the-art Shared Experimental Facilities for Analysis, such as SEM, TEM, X-ray Diffraction, nanoindenters, hardness tester, optical microscope, metallography microscope, thermal simulator, crystal growth machine, furnaces, and other fabrication machine.</p>
 				</div>
 			</div>
 		</div>
@@ -73,29 +138,42 @@
 			$('#insititutes').hide();
 			$('#keylabs').hide();
 			$('#facilities').hide();
+			$('.profile').hide();
 			$('#tab1').click(function() {
 				$('#overview').show();
 				$('#insititutes').hide();
 				$('#keylabs').hide();
 				$('#facilities').hide();
+				$('.profile').hide();
 			});
 			$('#tab2').click(function() {
 				$('#overview').hide();
 				$('#insititutes').show();
 				$('#keylabs').hide();
 				$('#facilities').hide();
+				$('.profile').hide();
 			});
 			$('#tab3').click(function() {
 				$('#overview').hide();
 				$('#insititutes').hide();
 				$('#keylabs').show();
 				$('#facilities').hide();
+				$('.profile').hide();
 			});
 			$('#tab4').click(function() {
 				$('#overview').hide();
 				$('#insititutes').hide();
 				$('#keylabs').hide();
+				$('.profile').hide();
 				$('#facilities').show();
+			});
+			$('.button1').click(function() {
+				$('#insititutes').hide();
+				$('#profile1').show();
+			});
+			$('.button2').click(function() {
+				$('#keylabs').hide();
+				$('#profile2').show();
 			});
 		});
 	</script>
